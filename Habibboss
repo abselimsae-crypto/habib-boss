@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehedi Boss Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      Number: <strong>8</strong><br />
+      Period: -- 00:00
+    </div>
+    <button class="login-btn">Login</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0b3d91;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.box {
+  background: #00ff00;
+  padding: 20px;
+  border-radius: 15px;
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #005500;
+}// script.js
+document.querySelector('.login-btn').addEventListener('click', function() {
+  alert('Login Button Clicked!');
+});
